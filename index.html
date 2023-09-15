@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav>
+      <p class="welcome-msg">Log in to get started</p>
+      <img src="images/logo.png" alt="" />
+      <form action="">
+        <input type="text" placeholder="user" class="user-input" />
+        <input type="text" placeholder="pin" class="user-pin" />
+        <button class="login-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </nav>
+    <div class="container">
+      <!-- balance -->
+      <div class="app">
+        <div class="balance-div">
+          <h5>Current Balance</h5>
+          <p>As of 5/8/2023</p>
+        </div>
+        <h5 class="balance-value">Rs0000</h5>
+      </div>
+
+      <!-- movement -->
+      <div class="movement-parent">
+        <div class="movement"></div>
+        <div class="deposit-section">
+          <div class="transfer-money deposit">
+            <p>transfer money</p>
+            <form action="">
+              <input type="text" class="transfer-input" />
+              <input type="number" class="transfer-amount" />
+              <button class="transfer-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <div class="labels">
+                <p>Transfer to</p>
+                <p>Amount</p>
+              </div>
+            </form>
+          </div>
+          <div class="request-loan deposit">
+            <p>request loan</p>
+            <form action="">
+              <input type="number" class="loan-input" />
+              <button class="loan-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <div class="labels">
+                <p>Amount</p>
+              </div>
+            </form>
+          </div>
+          <div class="close-account deposit">
+            <p>Close account</p>
+            <form action="">
+              <input type="text" class="close-user-input" />
+              <input type="number" class="close-user-pin" />
+              <button class="close-account-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <div class="labels">
+                <p>Confirm user</p>
+                <p>Confirm PIN</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="details">
+        <p>IN <span class="income">$18,900.00</span></p>
+        <p>OUT <span class="outcome">$6,180.00</span></p>
+        <p>INTEREST <span class="interest">$283.50</span></p>
+        <p class="sort-btn">&darr; SORT</p>
+        <p>You will be logged out in <span class="timer">time</span></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
